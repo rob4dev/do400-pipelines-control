@@ -29,7 +29,7 @@ pipeline {
                 expression { env.GET_BRANCH == 'origin/main' }
             }
             steps {
-                echo 'Deploying...'
+                echo 'Step not executed...'
             }
         }
     }
