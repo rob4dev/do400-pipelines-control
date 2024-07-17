@@ -24,5 +24,13 @@ pipeline {
                 }
             }
         }
+        stage('Deploy') {
+            when {
+                expression { env.GET_BRANCH == 'origin/main' }
+            }
+            steps {
+                echo 'Deploying...'
+            }
+        }
     }
 }
